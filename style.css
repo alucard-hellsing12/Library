@@ -9,16 +9,64 @@ body {
     min-height: 100vh;
     font-family: 'Nunito', sans-serif;
     background: #fef08a;
-    background-image:
-        radial-gradient(circle, #fde047 1px, transparent 1px);
+    background-image: radial-gradient(circle, #fde047 1px, transparent 1px);
     background-size: 28px 28px;
     display: flex;
+    flex-direction: column;
     color: #1a1a2e;
+}
+
+/* ── Header ── */
+.site-header {
+    background: #1a1a2e;
+    border-bottom: 4px solid #1a1a2e;
+    box-shadow: 0 6px 0 #f97316;
+    padding: 14px 32px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    background: #fef08a;
+    border: 3px solid #fef08a;
+    border-radius: 14px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0 #f97316;
+    flex-shrink: 0;
+}
+
+.site-title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 42px;
+    font-weight: 400;
+    margin: 0;
+    color: #fef08a;
+    letter-spacing: 1.5px;
+    text-shadow:
+        3px 3px 0 #f97316,
+        5px 5px 0 rgba(0,0,0,0.2);
+}
+
+/* ── Main layout ── */
+.main {
+    display: flex;
+    flex: 1;
 }
 
 .add {
     width: 290px;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 28px 20px;
     background: #fb923c;
     border-right: 4px solid #1a1a2e;
@@ -37,12 +85,6 @@ form button,
     letter-spacing: 0.5px;
     transition: transform 0.1s, box-shadow 0.1s;
     box-shadow: 4px 4px 0 #1a1a2e;
-}
-
-.new,
-form button,
-.card button {
-    display: inline-block;
 }
 
 .new:hover,
@@ -137,7 +179,6 @@ form button {
     border: 3px solid #1a1a2e;
     box-shadow: 6px 6px 0 #1a1a2e;
     transition: transform 0.15s, box-shadow 0.15s;
-    position: relative;
 }
 
 .card:hover {

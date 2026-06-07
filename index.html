@@ -8,34 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="add">
-        <button class="new">New Book</button>
-        <div class="form">
-            <form style="display: none;">
-                <div>
-                    <label for="Book_title">Book Title:</label>
-                    <input id="Book_title" type="text" placeholder="Title here!" required>
-                </div>
-                <div>
-                    <label for="Author">Author:</label>
-                    <input id="Author" type="text" placeholder="Author here!" required>
-                </div>
-                <div>
-                    <label for="pages">Pages:</label>
-                    <input type="number" id="pages" placeholder="eg. 320" required>
-                </div>
-                <div>
-                    <label for="isRead">Is Read?</label>
-                    <input id="isRead" type="checkbox">
-                </div>
-                <div>
-                    <button type="submit">Add</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="show">
 
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52" fill="none">
+                    <!-- Book stack -->
+                    <!-- Bottom book -->
+                    <rect x="6" y="44" width="52" height="12" rx="3" fill="#f97316" stroke="#1a1a2e" stroke-width="3"/>
+                    <!-- Middle book -->
+                    <rect x="10" y="30" width="44" height="12" rx="3" fill="#4ade80" stroke="#1a1a2e" stroke-width="3"/>
+                    <!-- Top book -->
+                    <rect x="14" y="16" width="36" height="12" rx="3" fill="#60a5fa" stroke="#1a1a2e" stroke-width="3"/>
+                    <!-- Spine lines -->
+                    <line x1="18" y1="16" x2="18" y2="28" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="14" y1="30" x2="14" y2="42" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="10" y1="44" x2="10" y2="56" stroke="#1a1a2e" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Star accent -->
+                    <polygon points="54,10 55.5,14 60,14 56.5,16.5 57.8,21 54,18.5 50.2,21 51.5,16.5 48,14 52.5,14" fill="#fef08a" stroke="#1a1a2e" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 class="site-title">My Library</h1>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="add">
+            <button class="new">New Book</button>
+            <div class="form">
+                <form style="display: none;">
+                    <div>
+                        <label for="Book_title">Book Title:</label>
+                        <input id="Book_title" type="text" placeholder="Title here!" required>
+                    </div>
+                    <div>
+                        <label for="Author">Author:</label>
+                        <input id="Author" type="text" placeholder="Author here!" required>
+                    </div>
+                    <div>
+                        <label for="pages">Pages:</label>
+                        <input type="number" id="pages" placeholder="eg. 320" required>
+                    </div>
+                    <div>
+                        <label for="isRead">Is Read?</label>
+                        <input id="isRead" type="checkbox">
+                    </div>
+                    <div>
+                        <button type="submit">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="show"></div>
     </div>
+
 </body>
 </html>
