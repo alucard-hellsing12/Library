@@ -84,3 +84,6 @@ npx serve .
 - Sort cards by title, author, or read status
 - Edit existing book entries
 - Import/export library as JSON
+
+## Live link of the website:
+    https://alucard-hellsing12.github.io/Library/
