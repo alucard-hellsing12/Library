@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    background: #fef08a;
+    background-image:
+        radial-gradient(circle, #fde047 1px, transparent 1px);
+    background-size: 28px 28px;
+    display: flex;
+    color: #1a1a2e;
+}
+
+.add {
+    width: 290px;
+    min-height: 100vh;
+    padding: 28px 20px;
+    background: #fb923c;
+    border-right: 4px solid #1a1a2e;
+    box-shadow: 6px 0 0 #1a1a2e;
+}
+
+.new,
+form button,
+.card button {
+    border: 3px solid #1a1a2e;
+    padding: 10px 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: 4px 4px 0 #1a1a2e;
+}
+
+.new,
+form button,
+.card button {
+    display: inline-block;
+}
+
+.new:hover,
+form button:hover,
+.card button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #1a1a2e;
+}
+
+.new:active,
+form button:active,
+.card button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #1a1a2e;
+}
+
+.new {
+    width: 100%;
+    background: #fef08a;
+    color: #1a1a2e;
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    background: #fff7ed;
+    border: 3px solid #1a1a2e;
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: 5px 5px 0 #1a1a2e;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #7c2d12;
+}
+
+input {
+    padding: 10px 12px;
+    border: 3px solid #1a1a2e;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    background: #ffffff;
+    outline: none;
+    transition: box-shadow 0.15s;
+}
+
+input:focus {
+    box-shadow: 3px 3px 0 #1a1a2e;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    accent-color: #16a34a;
+    cursor: pointer;
+}
+
+form button {
+    background: #4ade80;
+    color: #14532d;
+    align-self: stretch;
+}
+
+.show {
+    flex: 1;
+    padding: 36px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 28px;
+    align-content: start;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px;
+    border: 3px solid #1a1a2e;
+    box-shadow: 6px 6px 0 #1a1a2e;
+    transition: transform 0.15s, box-shadow 0.15s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0 #1a1a2e;
+}
+
+.card p:first-child {
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    color: #1e3a5f;
+    line-height: 1.2;
+}
+
+.card p {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #374151;
+    font-weight: 700;
+}
+
+.card button {
+    margin-top: 14px;
+    margin-right: 8px;
+    font-size: 14px;
+    padding: 8px 14px;
+}
+
+.read {
+    background: #4ade80;
+    color: #14532d;
+}
+
+.card button:not(.read):not(.del) {
+    background: #facc15;
+    color: #713f12;
+}
+
+.del {
+    background: #f87171;
+    color: #7f1d1d;
+}
